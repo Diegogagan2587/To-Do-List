@@ -36,6 +36,8 @@ const toDoList = [
 ]
 
 /* Start display to do list */
+import imgSrc from './img/icons/menu-3dots.png'
+
 function display(toDoList) {
   const listContainer = document.querySelector('#list-container');
   listContainer.innerHTML = '';
@@ -44,10 +46,19 @@ function display(toDoList) {
     const liElem = document.createElement('li');
     const description = task.description;
     if(task.completed) {
-      liElem.innerHTML = `<div class="square" value="${index}">&#10003;</div><p>${description}</p>`;
+      liElem.innerHTML = `
+      <div class="square" value="${index}">&#10003;</div>
+      <p>${description}</p>
+      <button><img alt=""></button>`;
     } else {
-      liElem.innerHTML = `<div class="square" value="${index}"></div><p>${description}</p>`; 
+      liElem.innerHTML = `
+      <div class="square" value="${index}"></div>
+      <p>${description}</p>
+      <button><img alt=""></button>`; 
     }
+    liElem.querySelector('img').src = imgSrc;
+
+    console.log(liElem.querySelector('img').src);
     listContainer.appendChild(liElem);
     index++;
   });
