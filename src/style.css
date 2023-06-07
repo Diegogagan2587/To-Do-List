@@ -2,10 +2,30 @@
      border: 1px solid green; 
 }
 
+.list-container {
+    padding-left: 0;
+}
+
 .list-container li {
     display: flex;
     gap: 5%;
     align-items: center;
+    justify-content: space-between;
+}
+
+.list-container li p {
+    width: 80%;
+}
+
+.list-container li button {
+    padding: 0;
+    height: 100px;
+    width: 20px;
+}
+
+.list-container li button img {
+    width: 18px;
+    height: 20px;
 }
 
 .square {
