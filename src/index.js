@@ -1,6 +1,6 @@
 import './style.css';
-
-console.log('index.js is working!')
+import display from './modules/display';
+import addTask from './modules/add_task.js';
 
 function Task (
   description,
@@ -34,38 +34,21 @@ const toDoList = [
     3
   )
 ]
-
-/* Start display to do list */
-import imgSrc from './img/icons/menu-3dots.png'
-
-function display(toDoList) {
-  const listContainer = document.querySelector('#list-container');
-  listContainer.innerHTML = '';
-  let index = 0;
-  toDoList.forEach(task => {
-    const liElem = document.createElement('li');
-    const description = task.description;
-    if(task.completed) {
-      liElem.innerHTML = `
-      <div class="square" value="${index}">&#10003;</div>
-      <p>${description}</p>
-      <button><img alt=""></button>`;
-    } else {
-      liElem.innerHTML = `
-      <div class="square" value="${index}"></div>
-      <p>${description}</p>
-      <button><img alt=""></button>`; 
-    }
-    liElem.querySelector('img').src = imgSrc;
-
-    console.log(liElem.querySelector('img').src);
-    listContainer.appendChild(liElem);
-    index++;
-  });
-
-}
 display(toDoList);
-/* finish display to do list */
+
+/* Add task */
+
+const inputForNewTask = document.getElementById('add-task');
+
+function validateIfEnter(event) {
+  if(event.key === 'Enter') {
+    addTask(toDoList);
+    display(toDoList);
+  }
+}
+
+inputForNewTask.addEventListener('keydown',validateIfEnter)
+
 
 
 
