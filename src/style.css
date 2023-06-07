@@ -1,5 +1,10 @@
 * {
+    box-sizing: border-box;
      border: 1px solid green; 
+}
+
+.input-add-task {
+    width: 100%;
 }
 
 .list-container {
@@ -17,13 +22,13 @@
     width: 80%;
 }
 
-.list-container li button {
+.list-container li .dots-menu {
     padding: 0;
     height: 100px;
     width: 20px;
 }
 
-.list-container li button img {
+.list-container li .dots-menu img {
     width: 18px;
     height: 20px;
 }
