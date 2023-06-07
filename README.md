@@ -222,6 +222,8 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+<a href="https://www.flaticon.com/free-icons/three-dots" title="three dots icons">Three dots icons created by alkhalifi design - Flaticon</a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -263,6 +265,7 @@ If you like this project...
 > Give credit to everyone who inspired your codebase.
 
 I would like to thank...
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
