@@ -12,7 +12,6 @@ function modifyCurrentTask(event) {
     updateDataIn(toDoList, inIndex, fromNewData);
     updateLocalStorage(toDoList);
   }
-  
 }
 
 export default modifyCurrentTask;
