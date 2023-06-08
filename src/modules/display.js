@@ -38,7 +38,6 @@ function display(toDoList) {
 
     listContainer.appendChild(liElem);
     index += 1;
-    console.log(toDoList);
   });
 }
 

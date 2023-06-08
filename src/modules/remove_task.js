@@ -3,8 +3,6 @@ import display from './display.js';
 import updateLocalStorage from './update_local_sorage.js';
 
 function removeTask(event) {
-  const currentTask = event.target.parentNode.parentNode;
-  const allTaskContainer = currentTask.parentNode;
   const indexToRemove = event.target.parentNode.value;
   toDoList.splice(indexToRemove, 1);
   let newIndex = 0;
@@ -12,7 +10,6 @@ function removeTask(event) {
     task.index = newIndex;
     newIndex += 1;
   });
-  console.log(allTaskContainer);
   display(toDoList);
   updateLocalStorage(toDoList);
 
