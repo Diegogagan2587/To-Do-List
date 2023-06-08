@@ -14,26 +14,6 @@ function Task(
 }
 
 const toDoList = [
-  new Task(
-    'clean the bathroom',
-    false,
-    0,
-  ),
-  new Task(
-    'make the bed',
-    true,
-    1,
-  ),
-  new Task(
-    'wash the dishes',
-    false,
-    2,
-  ),
-  new Task(
-    'clean the city',
-    false,
-    3,
-  ),
 ];
 display(toDoList);
 
