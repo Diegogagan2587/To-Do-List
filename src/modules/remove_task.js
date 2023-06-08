@@ -1,6 +1,6 @@
-import { toDoList } from '../index';
-import display from './display';
-import updateLocalStorage from './update_local_sorage';
+import { toDoList } from '../index.js';
+import display from './display.js';
+import updateLocalStorage from './update_local_sorage.js';
 
 function removeTask(event) {
   const indexToRemove = event.target.parentNode.value;

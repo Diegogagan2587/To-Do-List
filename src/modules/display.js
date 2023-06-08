@@ -1,4 +1,3 @@
-import { remove } from 'lodash';
 import imgSrc from '../img/icons/menu-3dots.png';
 import imgTrashSrc from '../img/icons/trash-9-24.png';
 import removeTask from './remove_task.js';
@@ -6,11 +5,8 @@ import removeTask from './remove_task.js';
 const listContainer = document.querySelector('#list-container');
 
 function showDeletButton(event) {
-  console.log('runing showDeleteButton');
   const taskContainer = event.target.parentNode.parentNode;
   taskContainer.querySelector('.trash-icon').classList.toggle('hide');
-
-  console.log(taskContainer);
 }
 
 function display(toDoList) {
@@ -42,7 +38,6 @@ function display(toDoList) {
 
     listContainer.appendChild(liElem);
     index += 1;
-    console.log('todo list after adding task', toDoList);
   });
 }
 
