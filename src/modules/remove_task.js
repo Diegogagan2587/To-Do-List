@@ -1,4 +1,4 @@
-import { toDoList } from '../index.js';
+import toDoList from '../index.js';
 import display from './display.js';
 import updateLocalStorage from './update_local_sorage.js';
 
