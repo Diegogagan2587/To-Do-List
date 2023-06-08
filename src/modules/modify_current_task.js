@@ -1,7 +1,7 @@
 import toDoList from './toDoList_data.js';
 import updateLocalStorage from './update_local_sorage.js';
 
-function updateDataIn(obj, indexToModify, newData) {
+function updateDataIn(toDoList, indexToModify, newData) {
   toDoList[indexToModify].description = newData;
 }
 
