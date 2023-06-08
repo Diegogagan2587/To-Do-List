@@ -7,6 +7,14 @@ a {
   color: inherit;
 }
 
+input {
+  border: 0;
+  color: inherit;
+  background-color: inherit;
+}
+
+
+
 .padding-lef-righ-5 {
   padding-left: 5%;
   padding-right: 5%;
@@ -57,8 +65,13 @@ a {
   border-top: 1px solid gray;
 }
 
-.list-container li p {
+.list-container li input {
   width: 80%;
+}
+
+.list-container li input:focus {
+  outline: none;
+  border: 0;
 }
 
 .list-container li .dots-menu {

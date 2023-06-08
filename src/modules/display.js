@@ -23,7 +23,7 @@ function display(toDoList) {
     } else {
       liElem.innerHTML = `
         <button class="square" value="${index}"></button>
-        <p>${description}</p>
+        <input type='text' value="${description}" >
         <button class="delete-button trash-icon hide"><img class="trash-icon" alt=""></button>
         <button class="dots-menu-button dots-menu" ><img class="dots-menu" alt=""></button>`;
     }
