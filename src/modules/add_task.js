@@ -4,13 +4,14 @@ function addTask(toDoList) {
   const description = document.getElementById('add-task').value;
   let index;
   if (toDoList.length < 1) {
-    index = 0;
+    index = 1;
   } else {
-    index = toDoList.length;
+    index = toDoList.length+1;
   }
 
   const newTask = new Task(description, false, index);
   toDoList.push(newTask);
+  console.log(toDoList)
 }
 
 export default addTask;
