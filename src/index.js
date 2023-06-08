@@ -22,10 +22,12 @@ display(toDoList);
 const inputForNewTask = document.getElementById('add-task');
 
 function validateIfEnter(event) {
+  console.log('value from the input',inputForNewTask.value);
   if (event.key === 'Enter') {
     addTask(toDoList);
     display(toDoList);
     updateLocalStorage(toDoList);
+    inputForNewTask.value = '';
   }
 }
 
