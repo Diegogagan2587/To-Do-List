@@ -24,6 +24,14 @@ a {
   padding-bottom: 3%;
 }
 
+.section-todolist label {
+  display: flex;
+}
+
+.section-todolist label span {
+  padding-right: 5%;
+}
+
 .input-add-task {
   background-color: inherit;
   width: 100%;
