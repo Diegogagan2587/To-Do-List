@@ -1,6 +1,5 @@
 import imgSrc from '../img/icons/menu-3dots.png';
 import imgTrashSrc from '../img/icons/trash-9-24.png';
-import removeTask from './remove_task.js';
 
 const listContainer = document.querySelector('#list-container');
 
@@ -28,16 +27,18 @@ function display(toDoList) {
         <button class="delete-button trash-icon hide"><img class="trash-icon" alt=""></button>
         <button class="dots-menu-button dots-menu" ><img class="dots-menu" alt=""></button>`;
     }
+    // set img sources:
     liElem.querySelector('.dots-menu-button').querySelector('img').src = imgSrc;
     liElem.querySelector('.trash-icon').querySelector('img').src = imgTrashSrc;
 
     liElem.querySelector('.dots-menu-button').addEventListener('click', showDeletButton);
     liElem.querySelector('.delete-button').value = index;
-    liElem.querySelector('.delete-button').addEventListener('click', removeTask);
+
     liElem.classList.add('padding-lef-righ-5');
 
     listContainer.appendChild(liElem);
     index += 1;
+    console.log(toDoList);
   });
 }
 
