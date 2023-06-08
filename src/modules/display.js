@@ -6,11 +6,11 @@ import removeTask from './remove_task.js';
 const listContainer = document.querySelector('#list-container');
 
 function showDeletButton(event) {
-  console.log('runing showDeleteButton')
+  console.log('runing showDeleteButton');
   const taskContainer = event.target.parentNode.parentNode;
-  taskContainer.querySelector('.trash-icon').classList.toggle('hide');;
-  
-  console.log(taskContainer)
+  taskContainer.querySelector('.trash-icon').classList.toggle('hide');
+
+  console.log(taskContainer);
 }
 
 function display(toDoList) {
@@ -42,7 +42,7 @@ function display(toDoList) {
 
     listContainer.appendChild(liElem);
     index += 1;
-    console.log('todo list after adding task',toDoList)
+    console.log('todo list after adding task', toDoList);
   });
 }
 

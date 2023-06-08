@@ -2,7 +2,8 @@ import './style.css';
 import display from './modules/display.js';
 import addTask from './modules/add_task.js';
 import updateLocalStorage from './modules/update_local_sorage.js';
-export { toDoList }
+
+export { toDoList };
 
 function Task(
   description,
@@ -32,4 +33,3 @@ function validateIfEnter(event) {
 }
 
 inputForNewTask.addEventListener('keydown', validateIfEnter);
-
