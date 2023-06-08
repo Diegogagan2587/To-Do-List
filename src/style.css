@@ -3,8 +3,8 @@
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .padding-lef-righ-5 {
@@ -70,9 +70,9 @@ a {
   width: 20px;
 }
 
-.clear{
-    display: flex;
-    justify-content: center;
+.clear {
+  display: flex;
+  justify-content: center;
 }
 
 .hide {
