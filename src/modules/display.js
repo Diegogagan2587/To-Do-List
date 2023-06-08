@@ -4,7 +4,7 @@ import imgTrashSrc from '../img/icons/trash-9-24.png';
 const listContainer = document.querySelector('#list-container');
 
 function showDeletButton(liElem) {
-
+  return liElem;
 }
 
 function display(toDoList) {
@@ -32,7 +32,7 @@ function display(toDoList) {
     liElem.classList.add('padding-lef-righ-5');
 
     listContainer.appendChild(liElem);
-    index++;
+    index += 1;
   });
 }
 
