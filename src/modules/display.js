@@ -14,10 +14,20 @@ function display(toDoList) {
   toDoList.forEach((task) => {
     const liElem = document.createElement('li');
     const { description } = task;
+    let checkboxClasses;
+    let currentTaskInputClasses;
+
+    if(task.completed) {
+      checkboxClasses = 'square checked-text';
+      currentTaskInputClasses = 'current-task-input checked-text';
+    } else {
+      checkboxClasses = 'square';
+      currentTaskInputClasses = 'current-task-input';
+    }
 
     liElem.innerHTML = `
-        <input type="checkbox" class="square" value="${index}">
-        <input class="current-task-input" type='text' value="${description}" >
+        <input type="checkbox" class="${checkboxClasses}" value="${index}">
+        <input class="${currentTaskInputClasses}" type='text' value="${description}" >
         <button class="delete-button trash-icon hide"><img class="trash-icon" alt=""></button>
         <button class="dots-menu-button dots-menu" ><img class="dots-menu" alt=""></button>`;
 
@@ -27,6 +37,7 @@ function display(toDoList) {
 
     liElem.querySelector('.dots-menu-button').addEventListener('click', showDeletButton);
     liElem.querySelector('.delete-button').value = index;
+    liElem.querySelector('.square').checked = task.completed;
 
     liElem.classList.add('padding-lef-righ-5');
 
