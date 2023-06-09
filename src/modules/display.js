@@ -17,7 +17,7 @@ function display(toDoList) {
     let checkboxClasses;
     let currentTaskInputClasses;
 
-    if(task.completed) {
+    if (task.completed) {
       checkboxClasses = 'square checked-text';
       currentTaskInputClasses = 'current-task-input checked-text';
     } else {
