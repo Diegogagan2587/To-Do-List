@@ -12,7 +12,7 @@ function upDateListeners() {
   allDeleteButton.forEach((button) => { button.addEventListener('click', removeTask); });
   allTaskAsInput.forEach((inputElement) => { inputElement.addEventListener('keydown', modifyCurrentTask); });
   AllCheckBox.forEach((checkBox) => { checkBox.addEventListener('change', statusHandler.change); });
-  clearButton.addEventListener('click', cleanCompletedTask)
+  clearButton.addEventListener('click', cleanCompletedTask);
 }
 
 export default upDateListeners;
