@@ -3,9 +3,6 @@ import display from './modules/display.js';
 import addTask from './modules/add_task.js';
 import updateLocalStorage from './modules/update_local_sorage.js';
 import toDoList from './modules/toDoList_data.js';
-import removeTask from './modules/remove_task.js';
-import modifyCurrentTask from './modules/modify_current_task.js';
-import statusHandler from "./modules/task_status.js";
 import upDateListeners from './modules/update_listeners.js';
 
 display(toDoList);
