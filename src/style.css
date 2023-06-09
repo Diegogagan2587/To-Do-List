@@ -63,7 +63,7 @@ input {
   border-top: 1px solid gray;
 }
 
-.list-container li input {
+.list-container li .current-task-input {
   width: 80%;
 }
 
@@ -87,6 +87,18 @@ input {
   border: 2px solid gray;
   height: 20px;
   width: 20px;
+  color:rgba(0, 0, 0, 0);
+}
+
+.checked {
+  display: flex;
+  color: blue;
+  font-size: 150%;
+  align-items: center;
+}
+
+.checked-text {
+  text-decoration: line-through;
 }
 
 .clear {
