@@ -1,4 +1,5 @@
 import toDoList from "./toDoList_data.js";
+import updateLocalStorage from "./update_local_sorage.js";
 
 const statusHandler = {
     change (event) {
@@ -12,6 +13,7 @@ const statusHandler = {
         } else {
             toDoList[currentTaskIndex].completed = false;
         }
+        updateLocalStorage(toDoList);
     }
 }
 
