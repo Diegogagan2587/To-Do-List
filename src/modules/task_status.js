@@ -6,12 +6,15 @@ const statusHandler = {
     const currentCheckBox = event.target;
     const currentTaskDescription = event.target.parentNode.querySelector('.current-task-input');
     const currentTaskIndex = event.target.value;
-    currentCheckBox.classList.toggle('checked');
-    currentTaskDescription.classList.toggle('checked-text');
-    if (currentCheckBox.classList.contains('checked')) {
+
+    if (currentCheckBox.checked) {
       toDoList[currentTaskIndex].completed = true;
+      currentCheckBox.classList.add('checked');
+      currentTaskDescription.classList.add('checked-text');
     } else {
       toDoList[currentTaskIndex].completed = false;
+      currentCheckBox.classList.remove('checked');
+      currentTaskDescription.classList.remove('checked-text');
     }
     updateLocalStorage(toDoList);
   },
