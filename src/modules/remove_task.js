@@ -21,6 +21,6 @@ function removeTask(event) {
   const allDeleteButton = document.querySelectorAll('.delete-button');
   allDeleteButton.forEach((button) => {
     button.addEventListener('click', removeTask);
-  });*/
+  }); */
 }
 export default removeTask;

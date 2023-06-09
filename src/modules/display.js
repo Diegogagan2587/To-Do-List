@@ -15,7 +15,7 @@ function display(toDoList) {
     const liElem = document.createElement('li');
     const { description } = task;
 
-      liElem.innerHTML = `
+    liElem.innerHTML = `
         <input type="checkbox" class="square" value="${index}">
         <input class="current-task-input" type='text' value="${description}" >
         <button class="delete-button trash-icon hide"><img class="trash-icon" alt=""></button>
