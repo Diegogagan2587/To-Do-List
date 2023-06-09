@@ -14,19 +14,13 @@ function display(toDoList) {
   toDoList.forEach((task) => {
     const liElem = document.createElement('li');
     const { description } = task;
-    if (task.completed) {
+
       liElem.innerHTML = `
-        <button class="square" value="${index}">&#10003;</button>
-        <p>${description}</p>
-        <button class="trash-icon hide"><img alt=""></button>
-        <button class="dots-menu-button dots-menu" ><img alt=""></button>`;
-    } else {
-      liElem.innerHTML = `
-        <button class="square" value="${index}"></button>
+        <input type="checkbox" class="square" value="${index}">
         <input class="current-task-input" type='text' value="${description}" >
         <button class="delete-button trash-icon hide"><img class="trash-icon" alt=""></button>
         <button class="dots-menu-button dots-menu" ><img class="dots-menu" alt=""></button>`;
-    }
+
     // set img sources:
     liElem.querySelector('.dots-menu-button').querySelector('img').src = imgSrc;
     liElem.querySelector('.trash-icon').querySelector('img').src = imgTrashSrc;
