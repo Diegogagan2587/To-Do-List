@@ -77,6 +77,8 @@
 - **Include Local Storage functionality**
 - **Add, remove or delete tasks**
 - **Mark Items as complete**
+- **Clear all completed task**
+- **Preserve any modification to the task list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,9 +86,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> A link to a live demo will be available soon!
+> Do you want to play around? take alook to the live demo!
 
-- [Will Be available soon!](https://google.com)
+- [To Do list Live Demo](https://diegogagan2587.github.io/To-Do-List/dist/index.html#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,9 +175,7 @@ https://pages.github.com/
 
 > features I will add to the project.
 
-- [ ] **Removing all times marked as compete at once**
 - [ ] **Reordering a Selected item(as drag and drop)**
-- [ ] **Marking a Selected item as completed**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
